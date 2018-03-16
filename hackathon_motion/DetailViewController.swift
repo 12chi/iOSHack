@@ -20,8 +20,6 @@ import AVFoundation
 
 class DetailViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
     
-    ///////////////////// NEW EDIT
-    
     let north = [
         ["name": "Seattle", "country": "United States", "population": "3,439,809", "food_dishes":"Seattle Dog, Ginger Beer", "climate": "Warm-summer Mediterranean climate", "languages": "English", "image": "seattle", "longitude":"-122.332071", "latitude":"47.60621", "sound":"1020"],
         ["name": "Vancouver", "country": "Canada", "population": "603,000", "food_dishes":"JapaDog, Salmon Candy", "climate": "Oceanic climate", "languages": "French, English", "image": "vancouver", "longitude":"-123.120738", "latitude":"49.282729", "sound":"1021"],
@@ -259,16 +257,6 @@ class DetailViewController: UIViewController, CLLocationManagerDelegate, MKMapVi
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
-//    override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
-//        if (motion == .motionShake) {
-//            let city = newCity(quad: direction!)
-//            let systemSoundID: SystemSoundID = 1021
-//            AudioServicesPlaySystemSound(systemSoundID)
-//            displayData(city: city)
-//        }
-//    }
     
     override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
         if (motion == .motionShake) {
